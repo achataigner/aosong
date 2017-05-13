@@ -127,7 +127,7 @@ class Sensor:
 		# 16-Sep-2014
 		# Thanks to Ethan for pointing out this bug!
 		# ethansimpson@xtra.co.nz
-        if temp_H&0x08:
+        if temp_H&0x80:
            negative = True
         # Mask the negative flag
         temp_H &=0x7F
